@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_photo"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#6867775C"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/palindrome_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Palindrome"
+        android:layout_below="@id/name_input"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#6867775C"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:layout_below="@id/palindrome_input"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2B637B"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_below="@id/check_button"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2B637B"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
